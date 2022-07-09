@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Pacifico&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hurricane&family=Pacifico&family=Satisfy&display=swap");
+
+.Navbar {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 15%);
+  top: 0;
+}
+.Brand_name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-left: 24px;
+  font-family: "Satisfy", cursive;
+}
+.Navbar_search {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: right;
+}
+.Navbar_searchInput {
+  width: 20%;
+  padding: 10px;
+  height: 12px;
+  border: none;
+  background: rgb(139, 139, 138);
+}
+.Navbar_searchIcon {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #bbb;
+  height: 22px;
+}
+.Navbar_signin {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-size: 13px;
+  font-weight: 800;
+  font-family: "Courgette", cursive !important;
+  color: #5f6368;
+}
+.Navbar_basket {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  color: #5f6368;
+}
+.Navbar_shoppingBag {
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+}
+.basket_count {
+  margin: 0 24px;
+}
+.Navbar a {
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+  .active {
+    border-bottom: none;
+  }
+}
