@@ -1,0 +1,18 @@
+.category {
+  height: 40vh;
+  width: 100%;
+}
+.category_titel {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6e6e73;
+  text-align: center;
+  border-bottom: 1px solid #6e6e73;
+  line-height: 20px;
+}
+.category_product_contenar{
+  justify-content: center;
+  align-items: center;
+
+}

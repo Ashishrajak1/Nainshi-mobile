@@ -1,0 +1,12 @@
+.slick-next,
+.slick-prev {
+  right: -22px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+}
+.slick-dots {
+  bottom: -50px !important;
+}

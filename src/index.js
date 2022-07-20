@@ -1,13 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-
 import "../node_modules/react-bootstrap/dist/react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import reducer, { initialState } from "./contextstore/Reducer";
+import { StateProvider } from "./contextstore/StateProvider";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <React.StrictMode>
+    {/* <StateProvider initialState={initialState} reducer={reducer}>
+
+    {/* <App /> */}
+
     <App />
-  </BrowserRouter>
+
+    {/* </StateProvider>  */}
+  </React.StrictMode>
 );
