@@ -6,6 +6,9 @@ import cag2 from "../Photos/cag2.png";
 import cag3 from "../Photos/cag3.png";
 import cag4 from "../Photos/cag4.png";
 import cag5 from "../Photos/cag5.png";
+import cag6 from "../Photos/cag6.png";
+import cag7 from "../Photos/cag7.png";
+
 import CategoryCard from "./CategoryCard";
 
 export default class MultipleItems extends Component {
@@ -16,7 +19,7 @@ export default class MultipleItems extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay:  false,
+      autoplay: false,
       speed: 1000,
       autoplaySpeed: 2000,
       cssEase: "linear",
@@ -57,7 +60,12 @@ export default class MultipleItems extends Component {
           </div>
           <div>
             <h3>
-              <CategoryCard title="Smart Watch" image={cag1} />
+              <CategoryCard title="Power bank" image={cag6} />
+            </h3>
+          </div>
+          <div>
+            <h3>
+              <CategoryCard title="Charger & Cable" image={cag7} />
             </h3>
           </div>
         </Slider>

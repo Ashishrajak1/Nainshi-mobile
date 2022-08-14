@@ -1,3 +1,42 @@
-.latest_card{
-    
+.latest_card {
+  height: 500px;
+  width: 400px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+.content {
+  display: grid;
+}
+.letest_background {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.latest_product_price {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.letest_img {
+  height: auto;
+  width: 300px;
+}
+.letest_all-text {
+  padding: 20px;
+}
+.latest_title {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #000;
+}
+.latestproductcard_detail {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
 }

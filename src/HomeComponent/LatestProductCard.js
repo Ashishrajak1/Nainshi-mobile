@@ -1,16 +1,22 @@
 import React from "react";
-
-function LatestProductCard() {
+import "./LatestProductCard.css";
+function LatestProductCard({ image, title, detail, price }) {
   return (
     <>
       <div className="latest_card">
-        <div className="letest_background">
-          <img className="letest_img" src={image} alt="" />
-        </div>
-        <div className="latest_title">{title}</div>
-        <div className="latest_product_price">
-          <strong>₹</strong>
-          <strong>{price}</strong>
+        <div className="content">
+          <div className="letest_all-text">
+            <div className="latest_title">{title}</div>
+            <div className="latestproductcard_detail">{detail}</div>
+            <div className="latest_product_price">
+              <span>₹</span>
+              <span>{price}</span>
+            </div>
+          </div>
+
+          <div className="letest_background">
+            <img className="letest_img" src={image} alt="" />
+          </div>
         </div>
       </div>
     </>

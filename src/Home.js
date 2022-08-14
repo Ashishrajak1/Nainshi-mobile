@@ -11,6 +11,7 @@ import img7 from "./Photos/img7.png";
 import img8 from "./Photos/img8.png";
 import banner from "./Photos/banner.png";
 import Category from "./HomeComponent/Category";
+import LatestProduct from "./HomeComponent/LatestProduct";
 
 function Home() {
   return (
@@ -21,6 +22,9 @@ function Home() {
         </div>
         <div>
           <Category />
+        </div>
+        <div>
+          <LatestProduct />
         </div>
         <div className="container">
           <div className="row home_row">

@@ -24,9 +24,7 @@ function Navbar() {
           <span className="Navbar_signin">Home</span>
         </NavLink>
         <NavLink to="/sign">
-          <div className="Navbar_signin">
-            <span>Sign In</span>
-          </div>
+          <span className="Navbar_signin">Sign In</span>
         </NavLink>
         <NavLink to="/checkout">
           <div className="Navbar_basket">
