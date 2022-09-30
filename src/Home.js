@@ -26,7 +26,7 @@ function Home() {
         <div>
           <LatestProduct />
         </div>
-        <div className="container">
+        <div className="container home_container">
           <div className="row home_row">
             <div className="col-3 ">
               <Product

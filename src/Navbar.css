@@ -53,7 +53,7 @@
   display: flex;
 }
 .basket_count {
-  margin: 0 24px;
+  margin: 0 12px 12px 1px;
 }
 .Navbar a {
   text-decoration: none;

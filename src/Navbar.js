@@ -4,9 +4,11 @@ import logo from "./Photos/logo.png";
 import { NavLink } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
-import { useStateValue } from "./contextstore/StateProvider";
+import { useSelector } from "react-redux";
+// import { useStateValue } from "./contextstore/StateProvider";
 function Navbar() {
   // const [{ basket }, dispatch] = useStateValue();
+  const basket = useSelector((state) => state.basket.length);
   return (
     <>
       <div className="Navbar">
@@ -32,7 +34,7 @@ function Navbar() {
               <FaShoppingBag />
             </span>
 
-            <span className="basket_count">0</span>
+            <span className="basket_count">{basket}</span>
           </div>
         </NavLink>
       </div>

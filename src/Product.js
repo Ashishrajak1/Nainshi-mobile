@@ -1,24 +1,26 @@
 import React from "react";
 import "./Product.css";
 import { FaStar } from "react-icons/fa";
-import { useStateValue } from "./contextstore/StateProvider";
-
+import { useDispatch, useSelector } from "react-redux";
+import { ADD_TO_CART } from "./CartStore/ActionType";
 function Product({ id, title, image, price, rating }) {
-  // const [{ basket }, dispatch] = useStateValue();
-  // const addToBasket = () => {
-  //   //dispatch the item into the datalayer
-  //   dispatch({
-  //     type: "ADD_TO_BASKET",
-  //     item: {
-  //       id: id,
-  //       title: title,
-  //       image: image,
-  //       price: price,
-  //       rating: rating,
-  //     },
-  //   });
-  // };
-  // console.log(basket);
+  const basket = useSelector((state) => state.basket);
+  const dispatch = useDispatch();
+  
+  const Addtocart = () => {
+    // dispatch the item into the datalayer
+    dispatch({
+      type: ADD_TO_CART,
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
+    });
+  };
+  console.log(basket);
   return (
     <>
       <div className="product ">
@@ -32,7 +34,7 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>
+              <p className="f_star_p">
                 <FaStar />
               </p>
             ))}
@@ -41,9 +43,7 @@ function Product({ id, title, image, price, rating }) {
           <strong>₹</strong>
           <strong>{price}</strong>
         </p>
-
-        <button className="add_btn">
-          {/* onClick={addToBasket} */}
+        <button className="add_btn" onClick={Addtocart}>
           Add to Basket
         </button>
       </div>
