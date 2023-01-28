@@ -1,0 +1,132 @@
+.Footer_main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: darkslateblue;
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer_main_sec {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.Brand_F_logo img {
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+}
+.footer_about {
+  width: 45%;
+  padding: 20px;
+}
+.footer_span {
+  font-size: 1.5em;
+  line-height: 6px;
+  letter-spacing: 0.9px;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.f_about_p {
+  text-align: start;
+  font-size: 1em;
+  padding-top: 20px;
+}
+.footer_contact {
+  width: 35%;
+  padding: 20px;
+}
+
+.right_detail {
+  margin-bottom: 10px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(114, 58, 244, 0.473);
+  font-weight: 600;
+}
+.right_detail span {
+  font-size: 15px;
+  color: #000;
+}
+.icon_bg_c {
+  background-color: #000;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.footer_c {
+  padding-top: 20px;
+}
+.ankar-tag {
+  margin: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 6px;
+  letter-spacing: 0.9px;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.ankar-tag:hover {
+  color: rgb(31, 8, 29);
+}
+.footer__links ul {
+  padding-left: 0rem;
+  padding-top: 20px;
+}
+.copyright {
+  font-size: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .Footer_main {
+    /* height: 100vh; */
+  }
+  .Footer_main_sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Brand_F_logo img {
+    height: 60px;
+  }
+  .footer_about {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .footer_contact {
+    width: 100%;
+    padding-top: 0;
+  }
+  .right_detail {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+
+  .icon_bg_c {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  .footer__links ul {
+    display: flex;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+}

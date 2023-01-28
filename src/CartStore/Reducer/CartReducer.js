@@ -1,11 +1,7 @@
-import { useSelector } from "react-redux";
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../ActionType";
-export const initialState = { basket: [] };
+import { ADD_TO_CART, REMOVE_FROM_CART, SET_USER } from "../ActionType";
+export const initialState = { basket: [], user: null };
 
 const CartReducer = (state = initialState, action) => {
-  console.log(action);
-  console.log(action.item);
-
   switch (action.type) {
     case ADD_TO_CART:
       return {
@@ -29,16 +25,14 @@ const CartReducer = (state = initialState, action) => {
         ...state,
         basket: newBasket,
       };
+    case SET_USER:
+      return {
+        ...state,
+        user: action.user,
+      };
     default: {
       return state;
     }
   }
 };
 export default CartReducer;
-
-// selector;
-// basket=useSelector(state=>state.basket)
-// export const getBasketTotal = (basket) =>
-//   basket?.reduce((amount, item) => basket.item.price + amount, 0);
-
-// console.log(basket.item.price);

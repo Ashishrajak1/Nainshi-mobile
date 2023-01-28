@@ -7,6 +7,24 @@
   width: 100%;
   padding: 45px;
 }
-.home_container{
-padding-bottom: 50px;
+.home_container {
+  padding-bottom: 50px;
+}
+.home_product_t {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6e6e73;
+  letter-spacing: 1px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  border-bottom: 1px solid #6e6e73;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 12px;
+  }
 }

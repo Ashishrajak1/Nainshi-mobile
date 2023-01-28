@@ -1,7 +1,7 @@
 .Navbar {
   background-color: #fff;
   height: 60px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   position: sticky;
@@ -9,9 +9,40 @@
   top: 0;
   z-index: 1;
 }
-.Brand_logo {
-  margin-left: -10px;
+.Navbar_items {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: center;
 }
+
+.Brand_logo img {
+  height: 180px;
+  width: auto;
+  margin-left: -10px;
+  cursor: pointer;
+}
+.Navbar_auth {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  color: #5f6368;
+}
+.Navbar_signin {
+  display: flex;
+  font-size: 13px;
+  font-weight: 800;
+  color: #5f6368;
+  justify-content: center;
+}
+.Navbar_optionLine {
+  margin-top: -18px;
+  font-size: 11px;
+  color: rgb(40, 92, 92);
+  padding-top: 2px;
+  margin-bottom: -2px;
+}
+
 .Navbar_search {
   border-radius: 20px;
   display: flex;
@@ -19,8 +50,15 @@
   flex: 1;
   justify-content: right;
 }
+.Navbar_home {
+  display: flex;
+  font-size: 13px;
+  font-weight: 800;
+  color: #5f6368;
+  margin-left: 24px;
+}
 .Navbar_searchInput {
-  width: 20%;
+  width: 50%;
   padding: 10px;
   height: 12px;
   border: none;
@@ -33,14 +71,7 @@
   background-color: #bbb;
   height: 22px;
 }
-.Navbar_signin {
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-size: 13px;
-  font-weight: 800;
-  color: #5f6368;
-}
+
 .Navbar_basket {
   margin-left: 24px;
   display: flex;
@@ -58,11 +89,33 @@
 .Navbar a {
   text-decoration: none;
 }
-@media (max-width: 991px) {
-  .navbar-brand {
-    font-size: 1.5em;
+
+@media (max-width: 768px) {
+  .Brand_logo img {
+    margin-left: -22px;
+    height: 100px;
   }
-  .active {
-    border-bottom: none;
+  .Navbar_searchInput {
+    width: 99%;
+  }
+  .Navbar_signin {
+    font-size: 10px;
+  }
+  .Navbar_optionLine {
+    font-size: 9px;
+    padding-top: 4px;
+    margin-bottom: 1px;
+  }
+  .Navbar_home {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+
+  .Navbar_shoppingBag {
+    font-size: 15px;
+  }
+  .basket_count {
+    margin: 0 5px 12px 1px;
+    font-size: 13px;
   }
 }

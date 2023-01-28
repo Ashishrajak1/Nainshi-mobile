@@ -26,6 +26,7 @@ export default class MultipleItems extends Component {
     };
     return (
       <div
+        className="categorycart_slide"
         style={{
           marginTop: "100px",
           paddingLeft: "30px",

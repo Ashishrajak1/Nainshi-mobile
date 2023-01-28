@@ -9,8 +9,7 @@ function LatestProductCard({ image, title, detail, price }) {
             <div className="latest_title">{title}</div>
             <div className="latestproductcard_detail">{detail}</div>
             <div className="latest_product_price">
-              <span>₹</span>
-              <span>{price}</span>
+              <span className="latestproduct_pri">From ₹{price}.00</span>
             </div>
           </div>
 

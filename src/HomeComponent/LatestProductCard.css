@@ -7,6 +7,7 @@
   border-radius: 15px;
   box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
+
 .content {
   display: grid;
 }
@@ -18,25 +19,56 @@
 }
 
 .latest_product_price {
-  font-size: 15px;
-  font-weight: 500;
   line-height: 50px;
 }
 .letest_img {
-  height: auto;
+  height: 250px;
   width: 300px;
 }
 .letest_all-text {
-  padding: 20px;
+  padding: 25px;
 }
 .latest_title {
   font-size: 27px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 50px;
-  color: #000;
+  letter-spacing: 0.9px;
+  color: #1d1d1f;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .latestproductcard_detail {
-  font-size: 18px;
-  font-weight: 400;
-  color: #000;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.9px;
+  background-color: #3d3d50;
+  color: #fff;
+  padding: 5px;
+}
+.latestproduct_pri {
+  font-size: 16px;
+  color: rgb(48, 43, 43);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.9px;
+}
+
+@media (max-width: 768px) {
+  .latest_card {
+    height: 375px;
+    width: 300px;
+  }
+  .letest_all-text {
+    padding: 10;
+  }
+  .latest_title {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .latestproductcard_detail {
+    font-size: 14px;
+  }
+
+  .letest_img {
+    height: 160px;
+    width: 192px;
+  }
 }

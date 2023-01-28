@@ -10,3 +10,9 @@
 .slick-dots {
   bottom: -50px !important;
 }
+
+@media (max-width: 768px) {
+  .categorycart_slide {
+    margin-top: 60px !important;
+  }
+}

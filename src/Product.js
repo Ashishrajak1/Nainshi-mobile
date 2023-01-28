@@ -1,12 +1,11 @@
 import React from "react";
 import "./Product.css";
 import { FaStar } from "react-icons/fa";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { ADD_TO_CART } from "./CartStore/ActionType";
 function Product({ id, title, image, price, rating }) {
-  const basket = useSelector((state) => state.basket);
   const dispatch = useDispatch();
-  
+
   const Addtocart = () => {
     // dispatch the item into the datalayer
     dispatch({
@@ -20,7 +19,7 @@ function Product({ id, title, image, price, rating }) {
       },
     });
   };
-  console.log(basket);
+
   return (
     <>
       <div className="product ">
@@ -51,4 +50,4 @@ function Product({ id, title, image, price, rating }) {
   );
 }
 
-export default Product;
+export default Product; 

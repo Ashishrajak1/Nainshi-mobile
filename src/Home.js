@@ -12,6 +12,7 @@ import img8 from "./Photos/img8.png";
 import banner from "./Photos/banner.png";
 import Category from "./HomeComponent/Category";
 import LatestProduct from "./HomeComponent/LatestProduct";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -27,8 +28,10 @@ function Home() {
           <LatestProduct />
         </div>
         <div className="container home_container">
+          <span className="home_product_t">Products</span>
+
           <div className="row home_row">
-            <div className="col-3 ">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12 ">
               <Product
                 id="1"
                 title="JBL Wireless Speaker "
@@ -37,7 +40,7 @@ function Home() {
                 rating={4}
               />
             </div>
-            <div className="col-3">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12">
               <Product
                 id="2"
                 title="AirPods Apple earbuds "
@@ -46,7 +49,7 @@ function Home() {
                 rating={5}
               />
             </div>
-            <div className="col-3">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12">
               <Product
                 id="3"
                 title="Apple Watch Smartwatch Wearable technology"
@@ -55,7 +58,7 @@ function Home() {
                 rating={5}
               />
             </div>
-            <div className="col-3">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12">
               <Product
                 id="4"
                 title="Beats Solo 2 Headphones Beats Electronics"
@@ -66,7 +69,7 @@ function Home() {
             </div>
           </div>
           <div className="row row-cols-4 justify-content-center align-items-center">
-            <div className="col-xs-12 col-sm-6 col-md-3">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12">
               <Product
                 id="1"
                 title="Vivo Y81 (Black, 32GB, 3GB Ram) "
@@ -75,7 +78,7 @@ function Home() {
                 rating={4}
               />
             </div>
-            <div className="col-xs-12 col-sm-6 col-md-3">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12">
               <Product
                 id="2"
                 title="Apple iPhone X (Silver 64 GB Rom) "
@@ -84,7 +87,7 @@ function Home() {
                 rating={5}
               />
             </div>
-            <div className="col-xs-12 col-sm-6 col-md-3">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12">
               <Product
                 id="3"
                 title="SAMSUNG Galaxy S9 (Lilac Purple, 64 GB) (4 
@@ -94,7 +97,7 @@ function Home() {
                 rating={5}
               />
             </div>
-            <div className="col-xs-12 col-sm-6 col-md-3">
+            <div className="col-xs-12 col-sm-6 col-md-3 col-12">
               <Product
                 id="4"
                 title="Powar Bank 10000mh"
@@ -105,6 +108,8 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <Footer />
       </div>
     </>
   );

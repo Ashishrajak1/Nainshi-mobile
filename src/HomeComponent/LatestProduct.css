@@ -1,16 +1,38 @@
 .latest_p {
   height: 100vh;
-  width: 100%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  width: 100vh;
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
 }
+.latest_p::-webkit-scrollbar {
+  display: none;
+}
+
 .latest_heading {
   font-size: 24px;
   font-weight: 600;
   color: #6e6e73;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-left: 70px;
 }
-.main_card {
- 
+.latest__row {
+  column-gap: 20px;
+  display: flex;
+}
+
+
+
+@media(max-width:768px){
+
+  .latest_heading {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .latest_p {
+    height: 70vh;
+  
+  }
 }
