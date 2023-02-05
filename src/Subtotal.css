@@ -19,3 +19,26 @@
   font-weight: 500;
   font-size: 12px;
 }
+.subtotal > button:hover {
+  color: #fff;
+  background-color: #5b4af3;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.subtotal > button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .subtotal {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .subtotal > button {
+    height: 25px;
+  }
+}

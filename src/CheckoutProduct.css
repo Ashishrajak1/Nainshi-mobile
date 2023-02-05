@@ -26,3 +26,26 @@
   font-weight: 500;
   font-size: 12px;
 }
+
+@media (max-width: 768px) {
+  .chechoutproduct {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+  }
+  .chechoutproduct_img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .chechoutproduct_title {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .remove_btn {
+    width: 100%;
+    height: 20px;
+
+    font-size: 10px;
+  }
+}

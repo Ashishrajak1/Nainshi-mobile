@@ -57,6 +57,9 @@
   color: #5f6368;
   margin-left: 24px;
 }
+.Navbar_home:active {
+  transform: translateY(1px);
+}
 .Navbar_searchInput {
   width: 50%;
   padding: 10px;
@@ -78,6 +81,10 @@
   align-items: center;
   color: #5f6368;
 }
+
+.Navbar_shoppingBag:active {
+  transform: translateY(1px);
+}
 .Navbar_shoppingBag {
   font-size: 20px;
   font-weight: 800;
@@ -86,6 +93,7 @@
 .basket_count {
   margin: 0 12px 12px 1px;
 }
+
 .Navbar a {
   text-decoration: none;
 }
