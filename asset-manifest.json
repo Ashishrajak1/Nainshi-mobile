@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nainshi-mobile/static/css/main.4947ae8e.css",
-    "main.js": "/Nainshi-mobile/static/js/main.0091913a.js",
+    "main.js": "/Nainshi-mobile/static/js/main.5d43080c.js",
     "static/media/img1.png": "/Nainshi-mobile/static/media/img1.f35c164efeb9257501a5.png",
     "static/media/img6.png": "/Nainshi-mobile/static/media/img6.1dc254a6fbd46c84498a.png",
     "static/media/img8.png": "/Nainshi-mobile/static/media/img8.e776fb92447ecd0b2581.png",
@@ -30,10 +30,10 @@
     "static/media/slick.woff": "/Nainshi-mobile/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Nainshi-mobile/index.html",
     "main.4947ae8e.css.map": "/Nainshi-mobile/static/css/main.4947ae8e.css.map",
-    "main.0091913a.js.map": "/Nainshi-mobile/static/js/main.0091913a.js.map"
+    "main.5d43080c.js.map": "/Nainshi-mobile/static/js/main.5d43080c.js.map"
   },
   "entrypoints": [
     "static/css/main.4947ae8e.css",
-    "static/js/main.0091913a.js"
+    "static/js/main.5d43080c.js"
   ]
 }
